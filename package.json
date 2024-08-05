@@ -5,6 +5,7 @@
   "scripts": {
     "index": "ts-node-dev --respawn --transpile-only index.ts",
     "fn":"ts-node-dev --respawn --transpile-only general.ts",
+    "interface":"ts-node-dev --respawn --transpile-only interfaces.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

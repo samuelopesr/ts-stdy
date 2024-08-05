@@ -76,36 +76,3 @@ const trabalhador: Employee = {
 };
 
 console.log(`Meu nome é ${trabalhador.name}, trabalho na ${trabalhador.empresa}, tenho ${trabalhador.age} anos, sou ${trabalhador.position}, meu id pessoal é ${trabalhador.id} e meu Id empresarial é ${trabalhador.employeeId}. Moro na ${trabalhador.address}`)
-
-interface searchFun {
-    (src: string, substring: string): boolean   
-}
-
-const mySearch: searchFun = function(src, sub){
-    return src.search(sub) > -1
-}
-
-console.log(mySearch('Meu nome é', 'Meu'))
-
-interface clockInterface {
-    currentTime: Date
-    setTime(d: Date): void
-}
-
-class Clock implements clockInterface {
-    currentTime: Date;
-
-    setTime(d: Date): Date {
-        this.currentTime = d
-        return d
-    }
-
-    constructor(){
-        this.currentTime = new Date()
-    }
-}
-
-const relogio: Clock = new Clock()
-
-
-console.log(relogio.setTime(new Date(2005, 9, 16)))
